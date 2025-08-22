@@ -1,0 +1,32 @@
+.header {
+  @apply flex shrink-0 items-center justify-between border-b border-border-primary px-6 py-4;
+
+  .header__logo {
+    @apply flex items-center gap-3;
+
+    .header__logo__icon {
+      @apply h-8 w-8;
+    }
+
+    .header__logo__title {
+      @apply text-xl font-bold;
+    }
+  }
+
+  .header__buttons {
+    @apply flex items-center gap-2;
+
+    .header__buttons__button {
+      @apply rounded-md px-3 py-1.5 text-sm font-semibold transition-colors;
+      cursor: pointer;
+
+      &:not(.header__buttons__button--active) {
+        @apply text-text-secondary hover:bg-background-secondary hover:text-white;
+      }
+
+      &.header__buttons__button--active {
+        @apply bg-primary-accent text-background-primary;
+      }
+    }
+  }
+}

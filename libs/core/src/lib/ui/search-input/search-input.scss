@@ -1,0 +1,19 @@
+.search-input {
+  @apply p-4;
+
+  .search-input__container {
+    @apply relative;
+
+    .search-input__icon {
+      @apply pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3;
+
+      .search-input__icon__image {
+        @apply text-text-secondary;
+      }
+    }
+
+    .search-input__input {
+      @apply block w-full rounded-md border-0 bg-background-secondary py-2.5 pl-10 pr-4 text-white placeholder:text-text-secondary focus:outline-none focus:ring-1 focus:ring-primary-accent;
+    }
+  }
+}

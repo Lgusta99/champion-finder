@@ -1,0 +1,13 @@
+<main class="character-data">
+  <div class="character-data__container">
+    <h2 class="character-data__container__title">{{ character?.name }}</h2>
+    <div class="character-data__container__tabs">
+      <nav class="character-data__container__tabs__items">
+        @for (tab of tabs; track tab) {
+          <a class="character-data__container__tabs__items__tab" [ngClass]="getTabStyle($index)" (click)="selectTab($index)">{{ tab }}</a>
+        }
+      </nav>
+    </div>
+    <ng-container *ngTemplateOutlet="getActiveTemplate()"></ng-container>
+  </div>
+</main>

@@ -1,0 +1,7 @@
+.character-list {
+  @apply w-80 shrink-0 border-r border-border-primary bg-background-primary;
+
+  .character-list__items {
+    @apply flex-1 space-y-1 overflow-y-auto p-4 pt-0;
+  }
+}

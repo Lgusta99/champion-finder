@@ -1,0 +1,28 @@
+.character-data {
+  @apply flex-1 overflow-y-auto;
+
+  .character-data__container {
+    @apply p-6;
+
+    .character-data__container__title {
+      @apply text-4xl font-bold;
+    }
+
+    .character-data__container__tabs {
+      @apply mt-4 border-b border-border-primary;
+
+      .character-data__container__tabs__items {
+        @apply -mb-px flex space-x-8;
+
+        .character-data__container__tabs__items__tab {
+          @apply whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-sm font-medium text-text-secondary hover:text-white;
+          cursor: pointer;
+
+          &.character-data__container__tabs__items__tab--active {
+            @apply text-primary-accent border-b-primary-accent;
+          }
+        }
+      }
+    }
+  }
+}

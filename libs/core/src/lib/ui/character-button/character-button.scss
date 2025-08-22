@@ -1,0 +1,16 @@
+.character-button {
+  @apply flex items-center gap-4 rounded-md p-2 transition-colors;
+  cursor: pointer;
+
+  &:hover {
+    @apply bg-background-secondary;
+  }
+
+  .character-button__image {
+    @apply size-12 shrink-0 rounded-md bg-cover bg-center bg-no-repeat;
+  }
+
+  .character-button__name {
+    @apply truncate font-medium;
+  }
+}

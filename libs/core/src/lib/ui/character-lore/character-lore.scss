@@ -1,0 +1,31 @@
+.character-lore {
+  @apply mt-6;
+
+  .character-lore__description {
+    @apply leading-relaxed text-text-secondary;
+  }
+}
+
+.character-title {
+  @apply mt-8 rounded-lg bg-background-secondary p-4;
+
+  .character-title__container {
+    @apply flex items-center gap-4;
+
+    .character-title__container__image {
+      @apply size-16 shrink-0 rounded-md bg-cover bg-center bg-no-repeat;
+    }
+
+    .character-title__container__text {
+      @apply flex-1;
+
+      .character-title__container__text__name {
+        @apply font-semibold;
+      }
+
+      .character-title__container__text__title {
+        @apply text-sm text-text-secondary;
+      }
+    }
+  }
+}
