@@ -1,8 +1,16 @@
 <div class="main-page">
-  <lib-character-list type="lol" [characters]="characters" (characterSelected)="onCharacterSelected($event)"></lib-character-list>
-  <lib-character-data [tabs]="tabs" [character]="characters[0]">
+  <lib-character-list
+    type="lol"
+    [characters]="characterStore.filteredCharacters()"
+    (characterSelected)="onCharacterSelected($event)"
+    (searchChange)="onSearchChange($event)">
+  </lib-character-list>
+
+  <lib-character-data
+    [tabs]="tabs"
+    [character]="characterStore.selectedCharacter() || characterStore.characters()[0]">
     <ng-template #tabContent>
-      <lib-character-lore [character]="characters[0]"></lib-character-lore>
+      <lib-character-lore [character]="characterStore.selectedCharacter() || characterStore.characters()[0]"></lib-character-lore>
     </ng-template>
   </lib-character-data>
 </div>

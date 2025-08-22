@@ -13,6 +13,7 @@
     "@angular/language-service": "~20.1.0",
     "@eslint/js": "^9.8.0",
     "@module-federation/enhanced": "^0.18.0",
+    "@ngrx/signals": "^20.0.0",
     "@nx/eslint": "21.4.0",
     "@nx/eslint-plugin": "21.4.0",
     "@nx/jest": "21.4.0",
@@ -56,6 +57,7 @@
     "@angular/router": "~20.1.0",
     "@nx/angular": "^21.4.0",
     "rxjs": "~7.8.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "~0.15.0",
+    "@ngrx/signals": "^20.0.0"
   }
 }

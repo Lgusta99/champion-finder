@@ -1,5 +1,5 @@
 <aside class="character-list">
-  <lib-search-input [placeholder]="type === 'lol' ? 'Pesquisar campeões' : 'Pesquisar agentes'"></lib-search-input>
+  <lib-search-input [placeholder]="type === 'lol' ? 'Pesquisar campeões' : 'Pesquisar agentes'" (searchChange)="onSearchChange($event)"></lib-search-input>
   <nav class="character-list__items">
     @for (character of characters; track character.id) {
       <lib-character-button [character]="character" (click)="onCharacterSelected(character)"></lib-character-button>

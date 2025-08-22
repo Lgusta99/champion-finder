@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'lib-search-input',
@@ -9,4 +9,9 @@ import { Component, Input } from '@angular/core';
 })
 export class SearchInput {
   @Input() placeholder = 'Search...';
+  @Output() searchChange = new EventEmitter<string>();
+
+  onSearchChange(event: any): void {
+    this.searchChange.emit(event.target.value);
+  }
 }
