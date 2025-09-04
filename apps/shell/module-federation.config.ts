@@ -14,7 +14,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['lol', 'valorant'],
+  remotes: [['lol', 'https://champion-finder-lol.vercel.app/']],
 };
 
 /**
