@@ -19,6 +19,10 @@ export default withModuleFederation(
      *   ['app2', 'https://app2.example.com'],
      * ]
      */
+    remotes: [
+    ['lol', 'https://champion-finder-lol.vercel.app/'],
+    ['valorant', 'https://champion-finder-valorant.vercel.app/'],
+  ],
   },
   { dts: false }
 );
